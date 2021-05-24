@@ -37,7 +37,6 @@ export default function App() {
         keyboardShouldPersistTaps="handled"
       >
         <View style={styles.tasksWrapper}>
-          <Text style={styles.sectionTitle}> Today's tasks</Text>
           <View style={styles.items}>
             {taskItems.map((item, index) => {
               return (
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
   },
   writeTaskWrapper: {
     position: "absolute",
-    bottom: 60,
+    top: 60,
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-around",
